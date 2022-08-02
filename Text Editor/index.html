@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ----------------------------- Style CSS ------------------------------ -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Text Editor</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Text Editor</h1>
+        </header>
+        <nav>
+            <button class="btn makeBold">Bold</button>
+            <button class="btn makeItalic">Italic</button>
+            <button class="btn makeUnderline">Underline</button>
+            <button class="btn makeStrike">Strike</button>
+            <button class="btn onLeft">Left</button>
+            <button class="btn onRight">Right</button>
+            <button class="btn changeBg-color">Bg-Color</button>
+            <button class="btn removeContent">Clear</button>
+        </nav>
+    
+        <section>
+            <div class="userInput">
+                <textarea name="" id="getText" cols="50" rows="12"></textarea>
+                <!-- <input type="text"> -->
+            </div>
+            <div class="showResult">
+                <textarea name="show" id="showText" cols="50" rows="12" readonly></textarea>
+                <!-- <p id="textprint"></p> -->
+            </div>
+        </section>
+    </div>
+    
+    <!-- ----------------------------- Style CSS ------------------------------ -->
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
