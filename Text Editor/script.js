@@ -12,7 +12,7 @@ for (let i = 0; i < btnClick.length; i++) {
             alert(`
             Textarea is blank...
             To do any event on this button please fill the textare..
-            `)
+            `);
         }
     }
 }
@@ -28,7 +28,7 @@ function updateText(e) {
 document.querySelector('.makeBold').addEventListener("click", makeBold);
 
 function makeBold() {
-    showResult.classList.toggle('makeBold')
+    showResult.classList.toggle('makeBold');
 }
 
 // ----------------------------- Make Italic ------------------------------
@@ -36,28 +36,35 @@ document.querySelector('.makeItalic').addEventListener("click", makeItalic);
 
 function makeItalic() {
     // showResult.style.fontStyle='italic';
-    showResult.classList.toggle('makeItalic')
+    showResult.classList.toggle('makeItalic');
 }
 
 // ----------------------------- Make Underline ------------------------------
 document.querySelector('.makeUnderline').addEventListener("click", makeUnderline);
 
 function makeUnderline() {
-    showResult.classList.toggle('makeUnderline')
+    showResult.classList.toggle('makeUnderline');
 }
 
 // ----------------------------- Make Strike ------------------------------
-document.querySelector('.makeStrike').addEventListener("click", makeUnderline);
+document.querySelector('.makeStrike').addEventListener("click", makeStrike);
 
-function makeUnderline() {
-    showResult.classList.toggle('makeStrike')
+function makeStrike() {
+    showResult.classList.toggle('makeStrike');
 }
 
 // ----------------------------- On Left ------------------------------
 document.querySelector('.onLeft').addEventListener("click", onLeft);
 
 function onLeft() {
-    showResult.classList.toggle('onLeft')
+    showResult.classList.toggle('onLeft');
+}
+
+// ----------------------------- On Center ------------------------------
+document.querySelector('.onCenter').addEventListener("click", onCenter);
+
+function onCenter() {
+    showResult.classList.toggle('onCenter');
 }
 
 // ----------------------------- On Right ------------------------------
@@ -65,6 +72,16 @@ document.querySelector('.onRight').addEventListener("click", onRight);
 
 function onRight() {
     showResult.classList.toggle('onRight');
+}
+
+// ----------------------------- Dark Light Mode ------------------------------
+let btnDarkLightMode = document.querySelector('.changeBgColor');
+// .addEventListener("click", darkLightMode)
+
+function darkLightMode(e) {
+    e.classList.toggle("fa-moon-o");
+
+    btnDarkLightMode.classList.toggle('darkMode')
 }
 
 // ----------------------------- Clear both the Container ------------------------------

@@ -9,6 +9,10 @@
     <!-- ----------------------------- Style CSS ------------------------------ -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- ----------------------------- Font-awesome ------------------------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>Text Editor</title>
@@ -16,35 +20,70 @@
 
 <body>
     <div class="container">
+        <!-- ------------------------------------------- Header -------------------------------------- -->
         <header>
             <h1>Text Editor</h1>
         </header>
+        <!-- ------------------------------------------- Navigation -------------------------------------- -->
         <nav>
-            <button class="btn makeBold">Bold</button>
-            <button class="btn makeItalic">Italic</button>
-            <button class="btn makeUnderline">Underline</button>
-            <button class="btn makeStrike">Strike</button>
-            <button class="btn onLeft">Left</button>
-            <button class="btn onRight">Right</button>
-            <button class="btn changeBg-color">Bg-Color</button>
-            <button class="btn removeContent">Clear</button>
+            <button class="btn makeBold">
+                <i class="fa-solid fa-bold"></i>
+            </button>
+
+            <button class="btn makeItalic">
+                <i class="fa-solid fa-italic"></i>
+            </button>
+
+            <button class="btn makeUnderline">
+                <i class="fa-solid fa-underline"></i>
+            </button>
+
+            <button class="btn makeStrike">
+                <i class="fa-solid fa-strikethrough"></i>
+            </button>
+
+            <button class="btn onLeft">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+
+            <button class="btn onCenter">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+
+            <button class="btn onRight">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+
+            <button class="darkLightMode fa fa-sun-o"  onclick="darkLightMode(this)">
+                <!-- <i class="></i> -->
+            </button>
+            <button class="btn removeContent">
+                <i class="fa-solid fa-xbox"></i>
+            </button>
         </nav>
-    
-        <section>
-            <div class="userInput">
-                <textarea name="" id="getText" cols="50" rows="12"></textarea>
-                <!-- <input type="text"> -->
-            </div>
-            <div class="showResult">
-                <textarea name="show" id="showText" cols="50" rows="12" readonly></textarea>
-                <!-- <p id="textprint"></p> -->
-            </div>
-        </section>
+
+        <!-- ------------------------------------------- Main -------------------------------------- -->
+        <main>
+            <!-- ------------------------------------------- Section -------------------------------------- -->
+            <section>
+                <!-- ------------------------------------------- User Input -------------------------------------- -->
+                <div class="userInput">
+                    <label for="text-input">Your Document Text</label>
+                    <textarea name="" id="getText" cols="50" rows="12" class="changeBgColor"></textarea>
+                </div>
+
+                <!-- ------------------------------------------- Output -------------------------------------- -->
+                <div class="showResult">
+                    <label for="text-input">Formatted Text</label>
+                    <textarea name="show" id="showText" cols="50" rows="12" readonly class="changeBgColor"></textarea>
+                </div>
+            </section>
+        </main>
     </div>
-    
+
     <!-- ----------------------------- Style CSS ------------------------------ -->
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>

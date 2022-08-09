@@ -12,18 +12,13 @@
     --main-color-hover: #1dabee;
 }
 
-/* ::selection {
-    color: #fff;
-    background: #00A4EF;
-} */
-
 body {
     min-height: 100vh;
     background: var(--main-color);
     overflow: hidden;
 }
 
-.container{
+.container {
     max-width: 800px;
     width: 100%;
     background-color: white;
@@ -31,19 +26,19 @@ body {
     border-radius: 5px;
 }
 
-header{
+header {
     position: relative;
     margin: 20px auto 0;
     padding: 10px 0;
     background-color: #000;
 }
 
-header h1{
+header h1 {
     text-align: center;
     color: #fff;
 }
 
-nav{
+nav {
     position: relative;
     background-color: #555;
     padding: 15px 10%;
@@ -53,7 +48,7 @@ nav{
     align-items: center;
 }
 
-nav button{
+nav button {
     color: #000;
     border: none;
     outline: none;
@@ -64,19 +59,14 @@ nav button{
     cursor: pointer;
 }
 
-nav button:last-child{
-    background-color: #ff0000;
-    color: #fff;
-}
-
-section{
+section {
     position: relative;
     display: flex;
     justify-content: space-evenly;
     padding: 15px 10px;
 }
 
-section div textarea{
+section div textarea {
     max-width: 100%;
     border: 1.5px solid #000;
     padding: 3px;
@@ -84,49 +74,71 @@ section div textarea{
 }
 
 section div textarea:focus,
-section div textarea:hover{
+section div textarea:hover {
     border: 1.5px solid #666;
 }
 
-section div:first-child{
+section div:first-child {
     width: 48%;
 }
 
-section div:last-child{
+section div:last-child {
     width: 48%;
 }
 
-section label{
+nav button:last-child {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+section label {
     color: #000;
     font-size: large;
     font-weight: 500;
 }
 
 /* ----------------------------- Make Bold ------------------------------ */
-.makeBold{
+.makeBold {
     font-weight: 900;
 }
 
 /* ----------------------------- Make Italic ------------------------------ */
-.makeItalic{
+.makeItalic {
     font-style: italic;
 }
 
 /* ----------------------------- Make Underline ------------------------------ */
-.makeUnderline{
+.makeUnderline {
     text-decoration: underline;
 }
 
 /* ----------------------------- Make Strike ------------------------------ */
-.makeStrike{
-    text-decoration:line-through;
+.makeStrike {
+    text-decoration: line-through;
 }
 
-.onLeft{
-    float: left;
+/* ----------------------------- Dark Light Mode ------------------------------ */
+.darkLightMode {
+    width: 6%;
+    height: 33px;
 }
 
-.onRight{
-    text-decoration: underline;
-    float: right;
+.darkMode {
+    background-color: #000;
+    color: #fff;
+}
+
+ /* ----------------------------- On Left ------------------------------ */
+.onLeft {
+    text-align: left;
+}
+
+ /* ----------------------------- On Center ------------------------------ */
+.onCenter {
+    text-align: center;
+}
+
+ /* ----------------------------- On Right ------------------------------ */
+.onRight {
+    text-align: right;
 }
