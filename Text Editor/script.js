@@ -1,6 +1,13 @@
 let userInput=document.getElementById("getText");
 let showResult=document.getElementById("showText");
 
+// userInput.addEventListener("input",ifTextFeildBlank);
+// function ifTextFeildBlank{
+//     if (userInput.value=='blank') {
+        
+//     }
+// }
+
 // ----------------------------- Update Text in next TextArea ------------------------------
 userInput.addEventListener("input",updateText);
 
@@ -12,35 +19,56 @@ function updateText(e) {
 document.querySelector('.makeBold').addEventListener("click",makeBold);
 
 function makeBold() {
-    showResult.style.fontWeight=900;
+    showResult.classList.toggle('makeBold')
 }
 
 // ----------------------------- Make Italic ------------------------------
-// document.querySelector('.makeItalic').addEventListener("click",makeItalic);
+document.querySelector('.makeItalic').addEventListener("click",makeItalic);
 
-// function makeItalic() {
-//     showResult.style.fontStyle='italic';
-// }
+function makeItalic() {
+    // showResult.style.fontStyle='italic';
+    showResult.classList.toggle('makeItalic')
+}
 
 // ----------------------------- Make Underline ------------------------------
-// document.querySelector('.makeUnderline').addEventListener("click",makeUnderline);
+document.querySelector('.makeUnderline').addEventListener("click",makeUnderline);
 
-// function makeUnderline() {
-//     showResult.style.textDecoration='underline';
-// }
+function makeUnderline() {
+    showResult.classList.toggle('makeUnderline')
+}
+
+// ----------------------------- Make Strike ------------------------------
+document.querySelector('.makeStrike').addEventListener("click",makeUnderline);
+
+function makeUnderline() {
+    showResult.classList.toggle('makeStrike')
+}
 
 // ----------------------------- On Left ------------------------------
-// document.querySelector('.onLeft').addEventListener("click",onLeft);
+document.querySelector('.onLeft').addEventListener("click",onLeft);
 
-// function onLeft() {
-//     showResult.style.fontStyle='italic';
-// }
-// ----------------------------- Make Italic ------------------------------
-// document.querySelector('.makeItalic').addEventListener("click",makeItalic);
+function onLeft() {
+    showResult.classList.toggle('onLeft')
+    console.log('click left');
+}
 
-// function makeItalic() {
-//     showResult.style.fontStyle='italic';
-// }
+// ----------------------------- On Right ------------------------------
+document.querySelector('.onRight').addEventListener("click",onRight);
+
+function onRight() {
+    showResult.classList.toggle('onRight');
+    console.log('click right');
+}
+
+// ----------------------------- Clear both the Container ------------------------------
+document.querySelector('.removeContent').addEventListener("click",removeContent);
+
+function removeContent() {
+    userInput.value="";
+    showResult.innerHTML="";
+}
+
+
 
 
 

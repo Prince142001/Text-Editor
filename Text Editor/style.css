@@ -25,6 +25,7 @@ body {
 
 .container{
     max-width: 800px;
+    width: 100%;
     background-color: white;
     margin: 30px auto 0;
     border-radius: 5px;
@@ -46,17 +47,13 @@ nav{
     position: relative;
     background-color: #555;
     padding: 15px 10%;
-    /* max-width: 100%; */
-    /* width: 70%; */
     margin: 0 auto;
-    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 nav button{
-    /* background-color: ; */
     color: #000;
     border: none;
     outline: none;
@@ -64,10 +61,72 @@ nav button{
     border-radius: 5px;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+nav button:last-child{
+    background-color: #ff0000;
+    color: #fff;
 }
 
 section{
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 15px 10px;
+}
+
+section div textarea{
+    max-width: 100%;
+    border: 1.5px solid #000;
+    padding: 3px;
+    font-size: 15px;
+}
+
+section div textarea:focus,
+section div textarea:hover{
+    border: 1.5px solid #666;
+}
+
+section div:first-child{
+    width: 48%;
+}
+
+section div:last-child{
+    width: 48%;
+}
+
+section label{
+    color: #000;
+    font-size: large;
+    font-weight: 500;
+}
+
+/* ----------------------------- Make Bold ------------------------------ */
+.makeBold{
+    font-weight: 900;
+}
+
+/* ----------------------------- Make Italic ------------------------------ */
+.makeItalic{
+    font-style: italic;
+}
+
+/* ----------------------------- Make Underline ------------------------------ */
+.makeUnderline{
+    text-decoration: underline;
+}
+
+/* ----------------------------- Make Strike ------------------------------ */
+.makeStrike{
+    text-decoration:line-through;
+}
+
+.onLeft{
+    float: left;
+}
+
+.onRight{
+    text-decoration: underline;
+    float: right;
 }
