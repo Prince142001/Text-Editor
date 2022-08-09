@@ -1,13 +1,6 @@
 let userInput=document.getElementById("getText");
 let showResult=document.getElementById("showText");
 
-// userInput.addEventListener("input",ifTextFeildBlank);
-// function ifTextFeildBlank{
-//     if (userInput.value=='blank') {
-        
-//     }
-// }
-
 // ----------------------------- Update Text in next TextArea ------------------------------
 userInput.addEventListener("input",updateText);
 
@@ -67,43 +60,3 @@ function removeContent() {
     userInput.value="";
     showResult.innerHTML="";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function italic() {
-    // let userInput=document.getElementById("getText").value;
-
-    // document.getElementById("showText").innerHTML=userInput;
-    // document.getElementById("showText").style.fontStyle="italic";    
-// }
-
-// // ----------------------------- Make Italic ------------------------------
-// document.querySelector('.makeItalic').addEventListener("click",makeItalic);
-
-// function makeItalic() {
-//     let userInput=document.getElementById("getText").value;
-
-//     document.getElementById("showText").innerHTML=userInput;
-//     document.getElementById("showText").style.fontStyle="italic";    
-// }
